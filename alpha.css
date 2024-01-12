@@ -5,6 +5,10 @@ body{
     background-image: url(./Images/back_img.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: #f5f5f5;
+}
+#mob-btn{
+    display: none;
 }
 nav{
     display: flex;
@@ -15,7 +19,6 @@ nav{
 nav> #left> h1{
     color: rgba(255, 255, 255, 0.578);
     font-size: 17.333px;
-    
 }
 nav> #left> h1> a{
     text-decoration: none;
@@ -158,6 +161,7 @@ nav> #left> h1> a{
     background-color: #e89980;
     color: white;
     padding: 2rem 0;
+    margin-top: 7rem;
 }
 #signUp> h2{
     font-size: 2.5rem;
@@ -239,3 +243,278 @@ footer> #f2> p span{
 footer> #f2> p span:hover{
     border: none;
 }
+
+/* icons Section */
+#icons{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: 0 2px 0 0 #e5e5e5;
+    border-radius: 5px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#icons> div{
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2rem;
+}
+.fa-bolt-lightning{
+    background-color: #e89980;
+    color: white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    padding: 1.7rem 2rem;
+}
+.fa-chart-area{
+    background-color: #7fcdb8;
+    color: white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    padding: 1.7rem 1.7rem;
+}
+.fa-cloud{
+    background-color: #90b0ba;
+    color: white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    padding: 2rem 1.7rem;
+}
+.fa-lock{
+    background-color: #e5cb95;
+    color: white;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    padding: 1.7rem 1.8rem;
+}
+#one{
+    border-right: 1px solid #7777;
+    border-bottom: 1px solid #7777;
+    position: relative;
+    top: 0.5px;
+    left: 0px;
+}
+#four{
+    border-left: 1px solid #7777;
+    border-top: 1px solid #7777;
+}
+#icons> div> h2{
+    font-size: 1.9rem;
+    color: #646464;
+}
+#icons> div> p{
+    font-size: 1.1rem;
+    color: #777777;
+}
+
+/* cards section  */
+#cards{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+#cards> div{
+    text-align: center;
+    background-color: white;
+    width: 48%;
+    padding-bottom: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 0 0 #e5e5e5;
+}
+#cards> div> img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#cards> div> h2{
+    font-size: 1.9rem;
+    color: #646464;
+}
+#cards> div> p{
+    font-size: 1.1rem;
+    color: #777777;
+    padding: 0 3.2rem;
+}
+#cards> div> button{
+    font-size: 1.1rem;
+    color: #777777;
+    height: 3.2rem;
+    padding: 0 2.2rem;
+    background: transparent;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 600px){
+    body{
+        background-size: 170%;
+        background-position-x: center;
+    }
+    nav{
+        display: none;
+    }
+    #mob-btn{
+        display: inline-block;
+        background-color: #c0c0c0bf;
+        color: white;
+        padding: 0.5rem 1.3rem;
+        border-radius: 5px;
+        margin: 0.5rem 0 0 0.5rem;
+    }
+    #alpha{
+        width: 80%;
+        margin: auto;
+    }
+    #alpha h1{
+        font-size: 2rem;
+        margin: 0;
+    }
+    #alpha p{
+        font-size: 1.1rem;
+    }
+    #alpha button{
+        width: 100%;
+        font-size: 0.8rem;
+        margin: 0 0 1rem 0;
+    }
+    #alpha #learn{
+        margin-bottom: 5rem;
+    }
+
+    /* Intro section */
+    #intro{
+        width: 100%;
+        margin-top: -1rem;
+        border-radius: 0px;
+    }
+    #intro> h2{
+        font-size: 1.6rem;
+        color: rgb(113, 113, 113);
+    }
+    #intro> p{
+        width: 90%;
+        font-size: 1.1rem;
+        padding-top: 2rem;
+    }
+    #intro > img{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    br{
+        display: none;
+    }
+
+    /* Sign up section */
+    #signUp{
+        margin-top: -1rem;
+    }
+    #signUp> h2{
+        font-size: 1.6rem;
+    }
+    #signUp> p{
+        font-size: 0.9rem;
+        margin: 0 1rem;
+    }
+    #signUp> input{
+        width: 80%;
+        font-size: 0.9rem;
+        margin-right: 0rem;
+    }
+    #signUp> button{
+        width: 87%;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    footer> #f2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer> #f2> p{
+        border-right: none;
+        margin-bottom: 10px;
+    }
+
+    /* icons Section */
+    #icons{
+        background-color: white;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    #icons> div{
+        width: 90%;
+        margin: auto;
+        display: block;
+        padding-bottom: 2rem;
+    }
+    .fa-bolt-lightning{
+        font-size: 2.3rem;
+        padding: 1.5rem 1.7rem;
+    }
+    .fa-chart-area{
+        font-size: 2.3rem;
+        padding: 1.5rem 1.5rem;
+    }
+    .fa-cloud{
+        font-size: 2.3rem;
+        padding: 1.6rem 1.3rem;
+    }
+    .fa-lock{
+        font-size: 2.3rem;
+        padding: 1.4rem 1.5rem;
+    }
+    #one{
+        border-right: 0px solid #7777;
+    }
+    #two{
+        border-bottom: 1px solid #7777;
+    }
+    #four{
+        border-left: 0px solid #7777;
+    }
+    #icons> div> h2{
+        font-size: 1.4rem;
+    }
+    #icons> div> p{
+        font-size: 0.9rem;
+    }
+
+    /* cards section  */
+    #cards{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    #cards> div{
+        width: 100%;
+        border-radius: 0px;
+        margin-bottom: 1rem;
+    }
+    #cards> div> img{
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    #cards> div> h2{
+        font-size: 1.4rem;
+    }
+    #cards> div> p{
+        font-size: 0.9rem;
+        padding: 0 1.5rem;
+    }
+    #cards> div> button{
+        font-size: 0.9rem;
+        color: #777777;
+        width: 90%;
+        height: 2.8rem;
+    }
+}
+  
